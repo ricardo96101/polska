@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Zdjęcia i Spotkania</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <meta property="og:image" content="https://i.postimg.cc/c4pXCYNv/497731201-122102246612871161-7162665191645491046-n.jpg">
-  <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
-
-  <!-- Contor de urmărire (stronger114) -->
-  <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "chimuelo", "1ca", "ffffffffffff", "small"]);</script>
+  <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "chimuve", "1ca", "ffffffffffff", "small"]);</script>
   <script async src="//waust.at/d.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odkryj naszą prywatną galerię</title>
+  <meta property="og:title" content="Prywatna Galeria" />
+  <meta property="og:image" content="https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png" />
+  <meta property="og:description" content="Dostęp do ekskluzywnych treści. Tylko dla dorosłych." />
+  <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon" />
   <style>
-    /* estilos no modificados */
+    /* Evitar selección y copia */
+    body, .container {
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    .container {
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+    }
+    .logo img {
+      width: 120px;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+    button {
+      background-color: #ff0055;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    button:hover {
+      background-color: #ff3366;
+    }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.getElementById('continueBtn');
+      let clicked = false;
+
+      button.addEventListener('click', function() {
+        if (clicked) return; // Previene dobles clics
+        clicked = true;
+
+        // Aquí el enlace protegido
+        const url = "https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={ChimuVE}&subid2={subid2}&clickid={clickid}";
+
+        // Redirigir al enlace
+        window.location.href = url;
+      });
+
+      // Bloquear clic derecho (para evitar copiar enlace)
+      document.addEventListener('contextmenu', event => event.preventDefault());
+
+      // Bloquear Ctrl+Click, Ctrl+U (ver código fuente), Ctrl+C (copiar)
+      document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey) {
+          // Lista de teclas bloqueadas con Ctrl
+          const blockedKeys = ['c', 'u', 's', 'p', 'a'];
+          if (blockedKeys.includes(e.key.toLowerCase())) {
+            e.preventDefault();
+            alert("Akcja niedozwolona.");
+          }
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-
-  <video autoplay muted loop id="VideoBg" playsinline>
-    <source src="https://cdn-dimi.akamaized.net/landings/275415/1665133459/images/4.mp4" type="video/mp4">
-  </video>
-
-  <div class="wrap">
+  <div class="container">
     <div class="logo">
-      <img src="https://i.imgur.com/sZdtUEq.png" alt="Logo strony">
+      <img src="https://i.imgur.com/sZdtUEq.png" alt="Logo" />
     </div>
-
-    <div class="step-block">
-      <div class="step-item" id="step1">
-        <div class="question-title">
-          Przyjeżdżamy do Ciebie w nocy, usługa dostępna w całym mieście. Chcesz zobaczyć mój katalog?
-        </div>
-        <div class="buttons-block">
-          <button class="step-btn" onclick="afiseazaPasul2()">Tak, chcę zobaczyć</button>
-          <button class="step-btn" onclick="alert('Może innym razem!')">Nie teraz</button>
-        </div>
-      </div>
-
-      <div class="step-item" id="step2" style="display: none;">
-        <div class="question-title">
-          UWAGA! Czy zgadzasz się szanować kobiety, które zobaczysz? Jeśli kogoś rozpoznasz, nie mów nikomu i nie rozpowiadaj plotek.
-        </div>
-        <div class="buttons-block">
-          <a href="https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={Chimuelo}&subid2={subid2}&clickid={clickid}" class="step-btn">
-            AKCEPTUJĘ I CHCĘ ZOBACZYĆ KATALOG
-          </a>
-        </div>
-      </div>
-    </div>
+    <h2>Czy chcesz uzyskać dostęp do naszej prywatnej galerii?</h2>
+    <p>Ekskluzywne treści tylko dla dorosłych. Prosimy potwierdzić, że masz ukończone 18 lat przed kontynuacją.</p>
+    <button id="continueBtn">
+      Tak, chcę kontynuować
+    </button>
   </div>
-
-  <script>
-    function afiseazaPasul2() {
-      document.getElementById("step1").style.display = "none";
-      document.getElementById("step2").style.display = "block";
-    }
-  </script>
-
 </body>
 </html>
